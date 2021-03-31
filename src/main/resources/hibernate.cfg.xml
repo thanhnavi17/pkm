@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/pokemondatabase?useSSL=true</property>
+		<!-- &amp;useUnicode=true&amp;characterEncoding=utf-8 -->
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">thanhmac1701</property>
+		<property name="hibernate.connection.CharSet">UTF-8</property>
+		<property name="hibernate.connection.characterEncoding">UTF-8</property>
+		<property name="hibernate.connection.useUnicode">true</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+		<!-- Khai báo các tập tin ánh xạ -->
+		<mapping class="pkmdb.model.Pokemon"/>
+		<mapping class="pkmdb.model.PkmType"/>
+		<mapping class="pkmdb.model.PkmForm"/>
+		<mapping class="pkmdb.model.Ability"/>
+		<mapping class="pkmdb.model.Form_Abi"/>
+		<mapping class="pkmdb.model.TypeChart"/>
+		<mapping class="pkmdb.model.Evolution"/>
+		<mapping class="pkmdb.model.Move"/>
+		<mapping class="pkmdb.model.MoveCategory"/>
+		<mapping class="pkmdb.model.FormType"/>
+		<mapping class="pkmdb.model.Generation"/>
+	</session-factory>
+</hibernate-configuration>

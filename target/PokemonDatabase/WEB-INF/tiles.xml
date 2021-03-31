@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Khai báo kiểu cho file tiles -->
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Khai báo template home -->
+	<definition name="baseLayoutHome"
+		template="/WEB-INF/home/layout/layout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="header"
+			value="/WEB-INF/home/layout/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/home/layout/menu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/home/layout/body.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/home/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="trangChu" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/TrangChu.jsp" />
+	</definition>
+	<definition name="chiTiet" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/ChiTiet.jsp" />
+	</definition>
+	<definition name="dexAll" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/PokedexAll.jsp" />
+	</definition>
+	<definition name="typeAll" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/Type.jsp" />
+	</definition>
+	<definition name="abilityAll" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/Ability.jsp" />
+	</definition>
+	<definition name="moveAll" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/MoveAll.jsp" />
+	</definition>
+	<definition name="abiInfo" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/AbilityInfo.jsp" />
+	</definition>
+	<definition name="typeInfo" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Trang chủ - DotaStore" />
+		<put-attribute name="body" value="/WEB-INF/home/TypeInfo.jsp" />
+	</definition>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Khai báo template admin -->
+	<definition name="baseLayoutAdmin"
+		template="/WEB-INF/admin/layout/layout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="navbar"
+			value="/WEB-INF/admin/layout/navbar.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/admin/layout/sidebar.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/layout/body.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/admin/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="dsPokemon" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/DanhSachPokemon.jsp" />	
+	</definition>
+	<definition name="pokedexAdd" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/PokedexAdd.jsp" />	
+	</definition>
+	<definition name="dsForm" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/DanhSachFormPkm.jsp" />	
+	</definition>
+	<definition name="formAdd" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/FormAdd.jsp" />	
+	</definition>
+	<definition name="abilityAdd" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/AbilityAdd.jsp" />	
+	</definition>
+	<definition name="dsAbility" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/DanhSachAbility.jsp" />	
+	</definition>
+	<definition name="dsMove" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/DanhSachMove.jsp" />	
+	</definition>
+	<definition name="moveAdd" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản trị văn bản" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/MoveAdd.jsp" />	
+	</definition>
+</tiles-definitions>
